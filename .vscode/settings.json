@@ -1,0 +1,5 @@
+﻿{
+  "conventionalCommits.scopes": ["frontend", "backend", "docs", "config", "deps", "ci"],
+  "conventionalCommits.maxSubjectLength": 72,
+  "conventionalCommits.gitmoji": false
+}
