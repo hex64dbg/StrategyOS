@@ -2,6 +2,10 @@
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
+    'scope-case': [2, 'always', ['kebab-case', 'lower-case']],
+    'scope-empty': [0],
+    'body-leading-blank': [2, 'always'],
+    'footer-leading-blank': [2, 'always'],
     'type-enum': [
       2,
       'always',

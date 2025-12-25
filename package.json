@@ -1,5 +1,16 @@
 {
+	"name": "strategyos",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"prepare": "husky",
+		"lint:commit": "pnpm exec commitlint --from=HEAD~1 --to=HEAD",
+		"changeset": "pnpm exec changeset",
+		"version": "pnpm exec changeset version",
+		"release": "pnpm exec changeset publish"
+	},
 	"devDependencies": {
+		"@changesets/cli": "^2.27.8",
 		"@commitlint/cli": "^20.2.0",
 		"@commitlint/config-conventional": "^20.2.0",
 		"husky": "^9.1.7"
