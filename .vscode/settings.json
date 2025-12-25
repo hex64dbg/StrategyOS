@@ -1,5 +1,7 @@
-﻿{
-  "conventionalCommits.scopes": ["frontend", "backend", "docs", "config", "deps", "ci"],
-  "conventionalCommits.maxSubjectLength": 72,
-  "conventionalCommits.gitmoji": false
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "git.inputValidation": true,
+    "git.inputValidationLength": 72,
+    "git.inputValidationSubjectLength": 72
 }

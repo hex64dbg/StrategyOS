@@ -1,0 +1,8 @@
+#!/bin/sh
+
+command -v pnpm >/dev/null 2>&1 || {
+  echo "pnpm is required to run commitlint" >&2
+  exit 1
+}
+
+pnpm exec commitlint --edit "$1"
