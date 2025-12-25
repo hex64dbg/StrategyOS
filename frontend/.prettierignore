@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Cache
+.cache/
+.turbo/
+
+# Package manager
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Auto-generated
+*.d.ts
+!src/vite-env.d.ts
+!src/env.d.ts
+
+# IDE
+.idea/
+.vscode/
+
+# Coverage
+coverage/
+
