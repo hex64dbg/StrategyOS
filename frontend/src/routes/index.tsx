@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
@@ -6,12 +5,5 @@ export const Route = createFileRoute('/')({
 })
 
 function IndexComponent() {
-  return (
-    <Typography
-      variant="h2"
-      component="h1"
-    >
-      StrategyOS
-    </Typography>
-  )
+  return <h1 className="text-4xl font-bold tracking-tight">StrategyOS</h1>
 }

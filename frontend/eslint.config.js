@@ -1,3 +1,4 @@
+import { defineConfig } from 'eslint/config'
 import js from '@eslint/js'
 import prettierConfig from 'eslint-config-prettier'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
@@ -8,7 +9,7 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
-export default tseslint.config(
+export default defineConfig(
   // Global ignores
   {
     ignores: [
@@ -31,10 +32,10 @@ export default tseslint.config(
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
-      ecmaVersion: 2024,
+      ecmaVersion: "latest",
       globals: {
         ...globals.browser,
-        ...globals.es2024,
+        ...globals.esnext,
       },
       parserOptions: {
         projectService: true,

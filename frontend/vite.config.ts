@@ -1,9 +1,23 @@
+import tailwindcss from '@tailwindcss/vite'
 import { tanstackRouter } from '@tanstack/router-plugin/vite'
 import react from '@vitejs/plugin-react'
+import path from 'node:path'
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
-  plugins: [tanstackRouter({ target: 'react', autoCodeSplitting: true }), react()],
+  plugins: [
+    tailwindcss(),
+    tanstackRouter({ target: 'react', autoCodeSplitting: true }),
+    react(),
+  ],
+  build: {
+    target: 'esnext',
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',

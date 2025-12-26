@@ -36,6 +36,20 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  // CSS - Use Tailwind CSS language mode for proper IntelliSense
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  // Disable SonarLint for CSS (Tailwind v4 syntax not recognized)
+  "sonarlint.analysisExcludesStandalone": "**/*.css",
+  "[tailwindcss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Terminal - Use Git Bash as default
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
   // Files
   "files.eol": "\n",
   "files.insertFinalNewline": true,

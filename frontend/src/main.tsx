@@ -6,10 +6,12 @@ import { RouterProvider } from '@tanstack/react-router'
 import { router } from './app/router.ts'
 import { enableMocking } from './test/mocks/enableMocking.ts'
 
-void enableMocking().then(() => {
-  createRoot(document.getElementById('root')!).render(
-    <StrictMode>
-      <RouterProvider router={router} />
-    </StrictMode>,
-  )
-})
+import './index.css'
+
+await enableMocking()
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+)

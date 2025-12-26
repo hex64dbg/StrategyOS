@@ -1,12 +1,5 @@
-import { Box, Container, createTheme, CssBaseline, ThemeProvider } from '@mui/material'
 import { createRootRoute, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-
-const theme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-})
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -14,14 +7,11 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Container maxWidth="lg">
-        <Box sx={{ py: 4 }}>
-          <Outlet />
-        </Box>
-      </Container>
+    <div className="dark min-h-screen bg-background text-foreground">
+      <main className="mx-auto max-w-5xl px-4 py-8">
+        <Outlet />
+      </main>
       <TanStackRouterDevtools position="bottom-right" />
-    </ThemeProvider>
+    </div>
   )
 }

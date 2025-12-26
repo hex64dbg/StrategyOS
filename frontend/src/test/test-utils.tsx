@@ -20,7 +20,7 @@ interface RenderWithRouterOptions extends Omit<RenderOptions, 'wrapper'> {
   initialEntries?: string[]
 }
 
-export function renderWithRouter(ui: ReactElement, options: RenderWithRouterOptions = {}) {
+export function renderWithRouter(_ui: ReactElement, options: RenderWithRouterOptions = {}) {
   const { initialEntries = ['/'], ...renderOptions } = options
   const testRouter = createTestRouter(initialEntries)
 
