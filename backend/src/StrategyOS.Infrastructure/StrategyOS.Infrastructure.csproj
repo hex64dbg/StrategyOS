@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\StrategyOS.Domain\StrategyOS.Domain.csproj" />
+    <ProjectReference Include="..\StrategyOS.Application\StrategyOS.Application.csproj" />
+  </ItemGroup>
+
+</Project>

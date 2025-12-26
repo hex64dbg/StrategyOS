@@ -1,0 +1,29 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    </PropertyGroup>
+
+    <!-- ASP.NET Core -->
+    <ItemGroup>
+        <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
+        <PackageVersion Include="Scalar.AspNetCore" Version="2.11.10" />
+    </ItemGroup>
+
+    <!-- Testing -->
+    <ItemGroup>
+        <PackageVersion Include="coverlet.collector" Version="6.0.4" />
+        <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+        <PackageVersion Include="xunit" Version="2.9.3" />
+        <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
+    </ItemGroup>
+
+    <!-- Analyzers -->
+    <ItemGroup>
+    <GlobalPackageReference Include="Meziantou.Analyzer" Version="2.0.264" PrivateAssets="all" />
+    <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.15.0" PrivateAssets="all" />
+    <GlobalPackageReference Include="SonarAnalyzer.CSharp" Version="10.17.0.131074" PrivateAssets="all" />
+    <GlobalPackageReference Include="Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers" Version="5.0.0-1.25277.114" PrivateAssets="all" />
+</ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+[*.cs]
+
+# CA2007 (ConfigureAwait): not applicable to ASP.NET Core
+# MA0004 - Use Task.ConfigureAwait
+# - ASP.NET Core has no SynchronizationContext
+# - ConfigureAwait(false) is a no-op and adds noise
+# - Re-enabled only for reusable libraries if needed
+dotnet_diagnostic.CA2007.severity = none
+dotnet_diagnostic.MA0004.severity = none
