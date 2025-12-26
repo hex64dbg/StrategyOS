@@ -18,6 +18,7 @@ yarn.lock
 *.d.ts
 !src/vite-env.d.ts
 !src/env.d.ts
+!src/routeTree.gen.ts
 
 # IDE
 .idea/
